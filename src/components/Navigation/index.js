@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import './style.sass'
+import '../../styles/css/navigation.css'
 
 const style = {
   active: {
@@ -19,7 +19,7 @@ class Navigation extends Component {
     const { active } = style
     return (
       <div className="Navigation">
-        <NavLink activeStyle={ active } to="/jason-lim/about">About</NavLink>
+        <NavLink activeStyle={ active } exact to="/jason-lim">About</NavLink>
         <NavLink activeStyle={ active } to="/jason-lim/projects">Projects</NavLink>
         <NavLink activeStyle={ active } to="/jason-lim/skills">Skills</NavLink>
       </div>

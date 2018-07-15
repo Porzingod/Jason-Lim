@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.sass'
+import '../../styles/css/about.css'
 
 class About extends Component {
   render() {
@@ -28,9 +28,9 @@ class About extends Component {
             <img className="profile-image-bottom" src={profilePic} alt="Jason Lim" />
             <div className="contact-info">
               <div>jasonlim.ny@gmail.com</div>
-              <a href="https://github.com/Porzingod" target="_blank"><i class="devicon-github-plain"></i></a>
-              <a href="https://www.linkedin.com/in/jason-lim-ny/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://medium.com/@porzingod" target="_blank"><i class="fab fa-medium"></i></a>
+              <a href="https://github.com/Porzingod" target="blank"><i className="devicon-github-plain"></i></a>
+              <a href="https://www.linkedin.com/in/jason-lim-ny/" target="blank"><i className="fab fa-linkedin"></i></a>
+              <a href="https://medium.com/@porzingod" target="blank"><i className="fab fa-medium"></i></a>
             </div>
           </div>
         </div>

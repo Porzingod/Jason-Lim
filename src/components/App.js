@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import './App.sass'
-
 import About from './About'
 import Navigation from './Navigation'
 import Projects from './Projects'
@@ -19,7 +17,7 @@ class App extends Component {
         <Navigation />
         <main>
           <Switch>
-            <Route path="/jason-lim/about" render={(props) => <About profilePic={ProfilePic} background={Joes1}/>} />
+            <Route exact path="/jason-lim" render={(props) => <About profilePic={ProfilePic} background={Joes1}/>} />
             <Route path="/jason-lim/projects" component={Projects} />
             <Route path="/jason-lim/skills" component={Skills} />
           </Switch>

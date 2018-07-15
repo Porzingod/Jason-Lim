@@ -1,0 +1,21 @@
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background: black;
+  text-align: center; }
+  .Navigation a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px; }
+    @media screen and (min-width: 750px) {
+      .Navigation a {
+        padding: 25px; } }
+    .Navigation a:hover {
+      color: white; }
+
+/*# sourceMappingURL=navigation.css.map */

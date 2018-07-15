@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.sass'
+import '../../styles/css/skills.css'
 import icons from './icons.js'
 
 class Skills extends Component {
@@ -7,7 +7,7 @@ class Skills extends Component {
     return (
       <div className="Skills">
         <div className="container">
-          {icons.map(icon => <i class={icon}></i>)}
+          {icons.map((icon, index) => <i className={icon} key={index}></i>)}
         </div>
       </div>
     )

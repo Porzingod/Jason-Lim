@@ -1,0 +1,33 @@
+.Projects {
+  position: fixed;
+  z-index: 0;
+  top: 63px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  padding: 20px;
+  overflow: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .Projects h2 {
+    margin-top: 0; }
+  @media screen and (min-width: 375px) {
+    .Projects {
+      padding: 20px 25px 20px 25px;
+      width: calc(100% - 50px); } }
+  @media screen and (min-width: 425px) {
+    .Projects {
+      padding: 20px 30px 20px 30px;
+      width: calc(100% - 60px); } }
+  @media screen and (min-width: 750px) {
+    .Projects {
+      padding: 20px 100px 20px 100px;
+      width: calc(100% - 200px); } }
+  @media screen and (min-width: 1200px) {
+    .Projects {
+      padding: 20px 300px 20px 300px;
+      width: calc(100% - 600px); } }
+
+/*# sourceMappingURL=projects.css.map */
