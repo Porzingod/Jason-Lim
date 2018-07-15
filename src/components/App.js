@@ -19,9 +19,9 @@ class App extends Component {
         <Navigation />
         <main>
           <Switch>
-            <Route path="/about" render={(props) => <About profilePic={ProfilePic} background={Joes1}/>} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/skills" component={Skills} />
+            <Route path="/jason-lim/about" render={(props) => <About profilePic={ProfilePic} background={Joes1}/>} />
+            <Route path="/jason-lim/projects" component={Projects} />
+            <Route path="/jason-lim/skills" component={Skills} />
           </Switch>
         </main>
       </div>
