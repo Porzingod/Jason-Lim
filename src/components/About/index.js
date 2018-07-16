@@ -9,7 +9,7 @@ class About extends Component {
       <div>
         <img className="background-image" src={background} alt="Joes Valley" />
         <div className="About">
-          <div className="col-container">
+          <div className="col-container main">
 
             <div className="row-container">
               <div className="profile-container">
@@ -22,7 +22,7 @@ class About extends Component {
               <div className="content">
                 <h2>Jason Lim</h2>
                 <p>
-                  I'm a full stack web developer that loves building highly functional and beautiful web applications.
+                  I'm a full stack web developer highly interested in building highly functional and beautiful web applications.
                 </p>
                 <p>
                   I'm also classically trained singer, an avid rock climber, and a depressed, lifelong Knick fan.

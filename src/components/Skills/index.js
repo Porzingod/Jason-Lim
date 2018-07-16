@@ -8,6 +8,7 @@ class Skills extends Component {
     return (
       <div className="Skills">
         <div className="container">
+          {/* {icons.map((icon, index) => <i className={`${icon}-${index}`} key={index}></i>)} */}
           {icons.map((icon, index) => <i className={icon} key={index}></i>)}
         </div>
       </div>

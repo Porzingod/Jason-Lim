@@ -1,3 +1,30 @@
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes fade-in {
+  0% {
+    -moz-opacity: 0; }
+  100% {
+    -moz-opacity: 1; } }
+@-webkit-keyframes fade-in {
+  0% {
+    -webkit-opacity: 0; }
+  100% {
+    -webkit-opacity: 1; } }
+@keyframes fade-in {
+  0% {
+    -webkit-opacity: 0;
+    opacity: 0; }
+  100% {
+    -webkit-opacity: 1;
+    opacity: 1; } }
 .background-image {
   position: fixed;
   z-index: -1;
@@ -51,6 +78,11 @@
     .About {
       padding: 20px 300px 20px 300px;
       width: calc(100% - 600px); } }
+
+.main {
+  -webkit-animation: fade-in 0.5s linear;
+  -moz-animation: fade-in 0.5s linear;
+  animation: fade-in 0.5s linear; }
 
 .col-container {
   display: flex;
