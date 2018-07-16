@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import '../../styles/css/projects.css'
 // import '../../styles/sass/projects.sass'
+import Project from './Project'
 
 class Projects extends Component {
   render() {
-    const { fridge, doggo } = this.props
+    const { projects } = this.props
     return (
       <div className="Projects">
-        <div className="container">
-          <img className="background-image" src={fridge} alt="Fridge Boss"/>
-        </div>
-        {/* <div className="container">
-          <img className="background-image" src={doggo} alt="Doggo Daycare"/>
-        </div> */}
+        {projects.map((project, index) => <Project project={project} key={index}/>)}
       </div>
     )
   }
