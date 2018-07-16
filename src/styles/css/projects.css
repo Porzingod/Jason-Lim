@@ -10,9 +10,7 @@
   padding: 20px;
   overflow: auto;
   color: white;
-  background-color: rgba(0, 0, 0, 0.8); }
-  .Projects h2 {
-    margin-top: 0; }
+  background-color: rgba(0, 0, 0, 0.85); }
   @media screen and (min-width: 375px) {
     .Projects {
       padding: 20px 25px 20px 25px;
@@ -29,5 +27,45 @@
     .Projects {
       padding: 20px 300px 20px 300px;
       width: calc(100% - 600px); } }
+
+.Project {
+  -webkit-animation: fade-in 0.5s linear;
+  -moz-animation: fade-in 0.5s linear;
+  animation: fade-in 0.5s linear;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 40px; }
+  .Project .info {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85); }
+  .Project .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding-right: 20px; }
+  .Project a {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none; }
+    .Project a:hover {
+      text-decoration: none; }
+    .Project a:visited {
+      text-decoration: none; }
+    .Project a:focus {
+      text-decoration: none; }
+    .Project a:active {
+      text-decoration: none; }
+  .Project img {
+    max-width: 100%;
+    max-height: 100%; }
 
 /*# sourceMappingURL=projects.css.map */
