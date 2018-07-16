@@ -21,7 +21,7 @@
     .Projects {
       padding: 20px 30px 20px 30px;
       width: calc(100% - 60px); } }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 768px) {
     .Projects {
       padding: 20px 100px 20px 100px;
       width: calc(100% - 200px); } }

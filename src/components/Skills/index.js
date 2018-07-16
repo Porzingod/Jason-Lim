@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/css/skills.css'
+// import '../../styles/sass/skills.sass'
 import icons from './icons.js'
 
 class Skills extends Component {

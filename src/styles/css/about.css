@@ -1,3 +1,18 @@
+.background-image {
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  left: -75%; }
+  @media screen and (orientation: landscape) and (min-width: 320px) {
+    .background-image {
+      left: 0; } }
+  @media screen and (orientation: landscape) and (min-width: 768px) {
+    .background-image {
+      width: 100%; } }
+  @media screen and (orientation: portrait) and (min-width: 768px) {
+    .background-image {
+      left: -35%; } }
+
 .About {
   position: fixed;
   z-index: 0;
@@ -9,13 +24,16 @@
   max-height: calc(100% - 40px);
   padding: 20px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.65); }
+  background-color: rgba(0, 0, 0, 0.65);
+  overflow: auto; }
   .About h2 {
     margin-top: 0px;
     margin-bottom: 15px; }
   .About p {
     margin-top: 8px;
     margin-bottom: 8px; }
+  .About hr {
+    width: 100%; }
   @media screen and (min-width: 375px) {
     .About {
       padding: 20px 25px 20px 25px;
@@ -23,10 +41,9 @@
   @media screen and (min-width: 425px) {
     .About {
       font-size: 17px;
-      overflow: hidden;
       padding: 20px 30px 20px 30px;
       width: calc(100% - 60px); } }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 768px) {
     .About {
       padding: 20px 100px 20px 100px;
       width: calc(100% - 200px); } }
@@ -35,18 +52,74 @@
       padding: 20px 300px 20px 300px;
       width: calc(100% - 600px); } }
 
-.profile-image-top {
+.col-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 103px); }
+
+.row-container {
+  display: flex;
+  flex-direction: row; }
+
+.bottom {
+  margin-top: 10px;
+  max-width: 350px; }
+
+.test {
+  display: flex;
+  align-items: center; }
+
+.col {
+  flex: 1; }
+
+.row {
+  flex: 1; }
+
+.content {
+  flex: 3; }
+
+.profile-container {
+  flex: 1;
   display: none;
-  max-height: 200px;
-  float: left;
-  padding-right: 20px; }
-  @media screen and (min-width: 750px) {
-    .profile-image-top {
-      display: inline-block; } }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
+    .profile-container {
+      display: flex; } }
+
+.profile-bottom-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .profile-bottom-container {
+      display: none; } }
+
+.profile {
+  flex: 1; }
+  .profile img {
+    border-radius: 5px;
+    max-height: 200px;
+    margin-right: 20px; }
+
+.profile-bottom {
+  flex: 1;
+  margin-right: 20px; }
+  .profile-bottom img {
+    border-radius: 5px;
+    max-height: 91px; }
+    @media screen and (min-width: 768px) {
+      .profile-bottom img {
+        display: none; } }
 
 .contact-info {
   text-align: center;
-  padding-top: 15px; }
+  flex: 1;
+  padding-top: 10px; }
   .contact-info a {
     color: white;
     text-decoration: none; }
@@ -64,35 +137,5 @@
   .contact-info h3 {
     margin: 0;
     text-align: right; }
-  @media screen and (min-width: 375px) {
-    .contact-info {
-      margin-top: 20px; } }
-  @media screen and (min-width: 425px) {
-    .contact-info {
-      margin-top: 30px; } }
-
-.profile-image-bottom {
-  display: block;
-  max-height: 91px;
-  float: left;
-  padding-right: 10px; }
-  @media screen and (min-width: 375px) {
-    .profile-image-bottom {
-      padding-left: 20px;
-      padding-right: 0px; } }
-  @media screen and (min-width: 425px) {
-    .profile-image-bottom {
-      padding-left: 30px;
-      padding-right: 0px; } }
-  @media screen and (min-width: 750px) {
-    .profile-image-bottom {
-      display: none; } }
-
-.background-image {
-  position: fixed;
-  z-index: -1;
-  background: url("../../images/joes1.jpg") center no-repeat;
-  background-size: cover;
-  height: 100%; }
 
 /*# sourceMappingURL=about.css.map */
