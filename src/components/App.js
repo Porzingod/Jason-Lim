@@ -18,10 +18,9 @@ class App extends Component {
         <Navigation />
         <main>
           <Switch>
-            <Redirect exact from="/" to="/jason-lim" />
-            <Route exact path="/jason-lim" render={(props) => <About profilePic={ProfilePic} background={Joes1}/>} />
-            <Route path="/jason-lim/projects" render={(props) => <Projects projects={projects}/>} />
-            <Route path="/jason-lim/skills" component={Skills} />
+            <Route exact path="/" render={(props) => <About profilePic={ProfilePic} background={Joes1}/>} />
+            <Route path="/projects" render={(props) => <Projects projects={projects}/>} />
+            <Route path="/skills" component={Skills} />
           </Switch>
         </main>
       </div>
