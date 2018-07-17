@@ -25,7 +25,7 @@ class About extends Component {
                   I'm a full stack web developer highly interested in building functional and beautiful web applications.
                 </p>
                 <p>
-                  I'm also classically trained singer, an avid rock climber, and a depressed, lifelong Knick fan.
+                  I'm also a classically trained singer, foodie, rock climber, and a depressed lifelong NY Knicks fan.
                 </p>
                 <p>
                   I realized my passion for programming when I built my first command line application. I was in awe that what started as an idea, written down into code, became a tangible application.

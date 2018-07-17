@@ -8,7 +8,9 @@ class Projects extends Component {
     const { projects } = this.props
     return (
       <div className="Projects">
-        {projects.map((project, index) => <Project project={project} key={index}/>)}
+        <div className="col-container">
+          {projects.map((project, index) => <Project project={project} key={index}/>)}
+        </div>
       </div>
     )
   }

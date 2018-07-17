@@ -76,8 +76,8 @@
       width: calc(100% - 200px); } }
   @media screen and (min-width: 1200px) {
     .About {
-      padding: 20px 300px 20px 300px;
-      width: calc(100% - 600px); } }
+      padding: 20px 200px 20px 200px;
+      width: calc(100% - 400px); } }
 
 .main {
   -webkit-animation: fade-in 0.5s linear;
